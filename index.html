@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>SmartSleepNest – Smarter Sleep, Healthier You</title>
+  <meta name="description" content="Discover the latest smart sleep gadgets, reviews, and tips for better rest at SmartSleepNest. Smarter Sleep, Healthier You.">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet">
+  <!-- AOS Animate On Scroll CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="SmartSleepNest – Smarter Sleep, Healthier You">
+  <meta property="og:description" content="Discover the latest smart sleep gadgets, reviews, and tips for better rest at SmartSleepNest.">
+  <meta property="og:image" content="https://example.com/og-image.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://smartsleepnest.com/">
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SmartSleepNest – Smarter Sleep, Healthier You">
+  <meta name="twitter:description" content="Discover the latest smart sleep gadgets, reviews, and tips for better rest at SmartSleepNest.">
+  <meta name="twitter:image" content="https://example.com/og-image.jpg">
+  <meta name="twitter:site" content="@smartsleepnest">
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      font-size: 16px;
+    }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
+    }
+    @media (min-width: 640px) {
+      html { font-size: 17px; }
+    }
+    @media (min-width: 1024px) {
+      html { font-size: 18px; }
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased">
+  <!-- Navigation -->
+  <nav class="bg-white shadow dark:bg-gray-900" aria-label="Main navigation" data-aos="fade-down">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <a href="/" class="text-2xl font-bold text-blue-700 dark:text-blue-300">SmartSleepNest</a>
+        <div class="flex items-center space-x-2">
+          <!-- Light/Dark Mode Toggle Button -->
+          <button id="theme-toggle" class="p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 transition bg-gray-100 dark:bg-gray-800" aria-label="Toggle dark mode">
+            <svg id="theme-toggle-light-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m8.66-13.66l-.71.71M4.05 19.07l-.71.71M21 12h-1M4 12H3m16.66 5.66l-.71-.71M4.05 4.93l-.71-.71M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+            </svg>
+            <svg id="theme-toggle-dark-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12.79A9 9 0 1111.21 3a7 7 0 109.79 9.79z"/>
+            </svg>
+          </button>
+          <button class="sm:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label="Open menu" id="mobile-menu-button">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
+        <ul class="hidden sm:flex space-x-8 font-medium" id="desktop-menu">
+          <li>
+            <a href="/" class="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-300 focus:text-blue-600 dark:focus:text-blue-300 focus:outline-none">
+              <!-- Home Icon -->
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9M4 10v10a1 1 0 001 1h3m10-11v10a1 1 0 01-1 1h-3m-6 0h6"/>
+              </svg>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/gadgets" class="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-300 focus:text-blue-600 dark:focus:text-blue-300 focus:outline-none">
+              <!-- Device Mobile Icon -->
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <rect width="14" height="20" x="5" y="2" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01"/>
+              </svg>
+              Sleep Gadgets
+            </a>
+          </li>
+          <li>
+            <a href="/reviews" class="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-300 focus:text-blue-600 dark:focus:text-blue-300 focus:outline-none">
+              <!-- Star Icon -->
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <polygon stroke-linecap="round" stroke-linejoin="round" points="12 17.27 18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27"/>
+              </svg>
+              Reviews
+            </a>
+          </li>
+          <li>
+            <a href="/blog" class="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-300 focus:text-blue-600 dark:focus:text-blue-300 focus:outline-none">
+              <!-- Document Text Icon -->
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h6m-6 4h10M5 4v16a2 2 0 002 2h10a2 2 0 002-2V4a2 2 0 00-2-2H7a2 2 0 00-2 2z"/>
+              </svg>
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="/contact" class="flex items-center gap-1 hover:text-blue-600 dark:hover:text-blue-300 focus:text-blue-600 dark:focus:text-blue-300 focus:outline-none">
+              <!-- Mail Icon -->
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <rect width="20" height="16" x="2" y="4" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M22 6l-10 7L2 6"/>
+              </svg>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Mobile Menu -->
+      <div class="sm:hidden" id="mobile-menu" style="display:none;">
+        <ul class="flex flex-col space-y-2 mt-2 font-medium">
+          <li>
+            <a href="/" class="flex items-center gap-1 py-2 px-4 hover:bg-blue-50 dark:hover:bg-gray-800 rounded">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l9-9 9 9M4 10v10a1 1 0 001 1h3m10-11v10a1 1 0 01-1 1h-3m-6 0h6"/>
+              </svg>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href="/gadgets" class="flex items-center gap-1 py-2 px-4 hover:bg-blue-50 dark:hover:bg-gray-800 rounded">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <rect width="14" height="20" x="5" y="2" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 18h.01"/>
+              </svg>
+              Sleep Gadgets
+            </a>
+          </li>
+          <li>
+            <a href="/reviews" class="flex items-center gap-1 py-2 px-4 hover:bg-blue-50 dark:hover:bg-gray-800 rounded">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <polygon stroke-linecap="round" stroke-linejoin="round" points="12 17.27 18.18 21 16.54 13.97 22 9.24 14.81 8.63 12 2 9.19 8.63 2 9.24 7.46 13.97 5.82 21 12 17.27"/>
+              </svg>
+              Reviews
+            </a>
+          </li>
+          <li>
+            <a href="/blog" class="flex items-center gap-1 py-2 px-4 hover:bg-blue-50 dark:hover:bg-gray-800 rounded">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h6m-6 4h10M5 4v16a2 2 0 002 2h10a2 2 0 002-2V4a2 2 0 00-2-2H7a2 2 0 00-2 2z"/>
+              </svg>
+              Blog
+            </a>
+          </li>
+          <li>
+            <a href="/contact" class="flex items-center gap-1 py-2 px-4 hover:bg-blue-50 dark:hover:bg-gray-800 rounded">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <rect width="20" height="16" x="2" y="4" rx="2" ry="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M22 6l-10 7L2 6"/>
+              </svg>
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      // Simple mobile menu toggle
+      document.addEventListener('DOMContentLoaded', function() {
+        const btn = document.getElementById('mobile-menu-button');
+        const menu = document.getElementById('mobile-menu');
+        btn.addEventListener('click', function() {
+          menu.style.display = menu.style.display === 'none' || menu.style.display === '' ? 'block' : 'none';
+        });
+      });
+    </script>
+    <script>
+      // Light/Dark Mode Toggle
+      document.addEventListener('DOMContentLoaded', function () {
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const root = document.documentElement;
+
+        // Set initial theme
+        function setTheme(theme) {
+          if (theme === 'dark') {
+            root.classList.add('dark');
+            darkIcon.classList.add('hidden');
+            lightIcon.classList.remove('hidden');
+          } else {
+            root.classList.remove('dark');
+            lightIcon.classList.add('hidden');
+            darkIcon.classList.remove('hidden');
+          }
+        }
+
+        // Detect saved theme or system preference
+        let savedTheme = localStorage.getItem('theme');
+        if (!savedTheme) {
+          savedTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        setTheme(savedTheme);
+
+        // Toggle theme on button click
+        themeToggleBtn.addEventListener('click', function () {
+          const isDark = root.classList.contains('dark');
+          if (isDark) {
+            setTheme('light');
+            localStorage.setItem('theme', 'light');
+          } else {
+            setTheme('dark');
+            localStorage.setItem('theme', 'dark');
+          }
+        });
+      });
+    </script>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="bg-blue-700 text-white py-16 relative overflow-hidden" data-aos="fade-up">
+    <div class="absolute inset-0 bg-blue-700 bg-opacity-60 backdrop-blur-md"></div>
+    <div class="relative max-w-3xl mx-auto px-4 text-center rounded-xl bg-white/20 backdrop-blur-lg shadow-lg py-12">
+      <h1 class="text-4xl sm:text-5xl font-extrabold mb-4 drop-shadow">SmartSleepNest</h1>
+      <p class="text-xl sm:text-2xl mb-8 drop-shadow">Smarter Sleep, Healthier You</p>
+      <a href="/gadgets"
+         class="inline-block px-8 py-3 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white font-semibold rounded shadow transition-all duration-300 hover:shadow-2xl hover:from-blue-600 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-white"
+         aria-label="Browse Sleep Gadgets">
+        Browse Sleep Gadgets
+      </a>
+    </div>
+  </header>
+
+  <!-- Wavy Divider: Hero to Products -->
+  <div aria-hidden="true">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-16 md:h-20">
+      <path fill="#e0e7ff" fill-opacity="1" d="M0,32 C360,80 1080,0 1440,48 L1440,80 L0,80 Z"></path>
+      <path fill="#bfdbfe" fill-opacity="0.7" d="M0,48 C480,0 960,96 1440,32 L1440,80 L0,80 Z"></path>
+    </svg>
+  </div>
+
+  <!-- Featured Products Section -->
+  <section class="max-w-7xl mx-auto px-4 py-16" aria-labelledby="featured-products-title" data-aos="fade-up">
+    <h2 id="featured-products-title" class="text-2xl font-bold mb-8 text-center md:text-left md:pl-4 border-l-4 border-blue-500 inline-block">
+      Featured Smart Sleep Gadgets
+    </h2>
+    <div class="grid gap-8 md:grid-cols-3">
+      <!-- Product Card 1 -->
+      <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl focus-within:scale-105 focus-within:shadow-2xl" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://via.placeholder.com/120x120?text=Gadget+1" alt="Smart Pillow product image" class="w-28 h-28 rounded mb-4 object-cover" />
+        <h3 class="text-lg font-semibold mb-2">DreamSense Smart Pillow</h3>
+        <p class="text-gray-600 mb-4 text-center">Track your sleep and enjoy gentle wake-ups with this AI-powered pillow.</p>
+        <a href="#"
+           class="mt-auto px-5 py-2 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded shadow transition-all duration-300 hover:shadow-2xl hover:from-blue-600 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+           aria-label="View DreamSense Smart Pillow on Amazon">
+          View on Amazon
+        </a>
+      </div>
+      <!-- Product Card 2 -->
+      <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl focus-within:scale-105 focus-within:shadow-2xl" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://via.placeholder.com/120x120?text=Gadget+2" alt="Sleep Tracker Band product image" class="w-28 h-28 rounded mb-4 object-cover" />
+        <h3 class="text-lg font-semibold mb-2">SleepTrack Pro Band</h3>
+        <p class="text-gray-600 mb-4 text-center">Wearable band for real-time sleep analysis and personalized tips.</p>
+        <a href="#"
+           class="mt-auto px-5 py-2 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded shadow transition-all duration-300 hover:shadow-2xl hover:from-blue-600 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+           aria-label="View SleepTrack Pro Band on Amazon">
+          View on Amazon
+        </a>
+      </div>
+      <!-- Product Card 3 -->
+      <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-2xl focus-within:scale-105 focus-within:shadow-2xl" data-aos="fade-up" data-aos-delay="300">
+        <img src="https://via.placeholder.com/120x120?text=Gadget+3" alt="Smart Light product image" class="w-28 h-28 rounded mb-4 object-cover" />
+        <h3 class="text-lg font-semibold mb-2">LunaGlow Smart Light</h3>
+        <p class="text-gray-600 mb-4 text-center">Wake up naturally with sunrise simulation and sleep-friendly lighting.</p>
+        <a href="#"
+           class="mt-auto px-5 py-2 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 text-white rounded shadow transition-all duration-300 hover:shadow-2xl hover:from-blue-600 hover:to-blue-800 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-colors"
+           aria-label="View LunaGlow Smart Light on Amazon">
+          View on Amazon
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Wavy Divider: Products to Blog Preview -->
+  <div aria-hidden="true">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-16 md:h-20">
+      <path fill="#e0e7ff" fill-opacity="1" d="M0,48 C360,0 1080,80 1440,32 L1440,80 L0,80 Z"></path>
+      <path fill="#93c5fd" fill-opacity="0.5" d="M0,32 C480,96 960,0 1440,48 L1440,80 L0,80 Z"></path>
+    </svg>
+  </div>
+
+  <!-- Blog Preview Section -->
+  <section class="max-w-7xl mx-auto px-4 py-16" aria-labelledby="blog-preview-title" data-aos="fade-up">
+    <h2 id="blog-preview-title" class="text-2xl font-bold mb-8 text-center md:text-left md:pl-4 border-l-4 border-blue-500 inline-block">
+      Latest from the Blog
+    </h2>
+    <div class="grid gap-8 md:grid-cols-3">
+      <!-- Blog Preview 1 -->
+      <article class="bg-white rounded-lg shadow p-6 flex flex-col" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-lg font-semibold mb-2">How Smart Pillows Are Changing Sleep</h3>
+        <p class="text-gray-600 mb-4">Explore the latest innovations in smart pillows and how they can improve your nightly rest.</p>
+        <a href="/blog/how-smart-pillows-are-changing-sleep" class="mt-auto text-blue-600 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" aria-label="Read more about How Smart Pillows Are Changing Sleep">Read More &rarr;</a>
+      </article>
+      <!-- Blog Preview 2 -->
+      <article class="bg-white rounded-lg shadow p-6 flex flex-col" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-lg font-semibold mb-2">Top 5 Sleep Gadgets in 2025</h3>
+        <p class="text-gray-600 mb-4">A roundup of the most innovative gadgets designed to help you sleep better this year.</p>
+        <a href="/blog/top-5-sleep-gadgets-2025" class="mt-auto text-blue-600 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" aria-label="Read more about Top 5 Sleep Gadgets in 2025">Read More &rarr;</a>
+      </article>
+      <!-- Blog Preview 3 -->
+      <article class="bg-white rounded-lg shadow p-6 flex flex-col" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-lg font-semibold mb-2">Building a Smart Bedroom: Tips & Tricks</h3>
+        <p class="text-gray-600 mb-4">Learn how to create a tech-savvy, restful sleep environment with these expert tips.</p>
+        <a href="/blog/building-a-smart-bedroom" class="mt-auto text-blue-600 hover:underline focus:outline-none focus:ring-2 focus:ring-blue-500 rounded" aria-label="Read more about Building a Smart Bedroom">Read More &rarr;</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Wavy Divider: Blog Preview to Footer -->
+  <div aria-hidden="true">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-16 md:h-20">
+      <path fill="#e0e7ff" fill-opacity="1" d="M0,32 C360,80 1080,0 1440,48 L1440,80 L0,80 Z"></path>
+      <path fill="#bfdbfe" fill-opacity="0.7" d="M0,48 C480,0 960,96 1440,32 L1440,80 L0,80 Z"></path>
+    </svg>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-12 mt-8" data-aos="fade-up">
+    <div class="max-w-7xl mx-auto px-4 grid gap-8 md:grid-cols-3">
+      <!-- Quick Links -->
+      <nav aria-label="Footer navigation">
+        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+        <ul class="space-y-2">
+          <li><a href="/" class="hover:text-white focus:text-white focus:outline-none">Home</a></li>
+          <li><a href="/gadgets" class="hover:text-white focus:text-white focus:outline-none">Sleep Gadgets</a></li>
+          <li><a href="/reviews" class="hover:text-white focus:text-white focus:outline-none">Reviews</a></li>
+          <li><a href="/blog" class="hover:text-white focus:text-white focus:outline-none">Blog</a></li>
+          <li><a href="/contact" class="hover:text-white focus:text-white focus:outline-none">Contact</a></li>
+        </ul>
+      </nav>
+      <!-- Newsletter Signup -->
+      <div class="md:col-span-2">
+        <h4 class="text-lg font-semibold mb-4">Subscribe to Our Newsletter</h4>
+        <form class="flex flex-col sm:flex-row items-center gap-4" aria-label="Newsletter signup">
+          <label for="newsletter-email" class="sr-only">Email address</label>
+          <input type="email" id="newsletter-email" name="email" required autocomplete="email" placeholder="Your email address" class="w-full sm:w-auto px-4 py-2 rounded bg-gray-800 text-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <button type="submit" class="px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 transition" aria-label="Subscribe to newsletter">Subscribe</button>
+        </form>
+        <p class="text-gray-400 text-sm mt-2">No spam. Unsubscribe anytime.</p>
+      </div>
+    </div>
+    <div class="mt-8 text-center text-gray-500 text-sm">
+      &copy; 2025 SmartSleepNest.com. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- AOS Animate On Scroll JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      once: true,
+      duration: 800,
+      easing: 'ease-out-cubic'
+    });
+  </script>
+</body>
+</html>
