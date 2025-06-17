@@ -2,20 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SmartSleepNest Pro – Smarter Sleep, Healthier You</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SmartSleepNest – Smarter Sleep, Healthier You</title>
+  <meta name="description" content="Discover the latest smart sleep gadgets, reviews, and tips for better rest at SmartSleepNest. Smarter Sleep, Healthier You.">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet" />
-  <meta name="description" content="SmartSleepNest – professional review site for the latest sleep tech gadgets and sleep tips." />
-  <link rel="icon" href="favicon.ico" />
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
 </head>
-<body class="bg-gray-50 text-gray-900 font-sans antialiased">
-  <!-- Placeholder content for professional homepage build -->
-  <header class="py-16 text-center">
-    <h1 class="text-5xl font-bold text-blue-700">SmartSleepNest Pro</h1>
-    <p class="text-xl mt-4">The sleep tech hub trusted by over 10,000 users</p>
+<body class="bg-gray-50 text-gray-900 antialiased">
+
+  <!-- Hero Section -->
+  <header class="bg-blue-700 text-white py-20 text-center relative overflow-hidden">
+    <div class="absolute inset-0 bg-blue-800 bg-opacity-60 backdrop-blur-md"></div>
+    <div class="relative max-w-3xl mx-auto px-6">
+      <h1 class="text-5xl font-extrabold mb-4 drop-shadow">SmartSleepNest</h1>
+      <p class="text-2xl mb-8 drop-shadow">Smarter Sleep, Healthier You</p>
+      <a href="/gadgets" class="inline-block bg-gradient-to-r from-blue-500 to-blue-700 text-white px-8 py-3 rounded shadow hover:from-blue-600 hover:to-blue-800 transition font-semibold">
+        Browse Sleep Gadgets
+      </a>
+    </div>
   </header>
-  <main class="px-4 max-w-4xl mx-auto py-10 text-center">
-    <p class="text-lg text-gray-600">This will be replaced with the fully polished and professional homepage design.</p>
-  </main>
+
+  <!-- Section Divider -->
+  <div aria-hidden="true">
+    <svg viewBox="0 0 1440 80" class="w-full h-16"><path fill="#f3f4f6" d="M0,32 C480,80 960,0 1440,48 L1440,80 L0,80 Z"/></svg>
+  </div>
+
+  <!-- Featured Products -->
+  <section class="max-w-7xl mx-auto px-6 py-20" aria-labelledby="featured-products-title">
+    <h2 id="featured-products-title" class="text-3xl font-bold border-l-4 border-blue-500 pl-4 mb-12">Featured Smart Sleep Gadgets</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <div class="bg-white shadow rounded-lg p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="https://source.unsplash.com/120x120/?pillow,sleep" alt="DreamSense Smart Pillow" class="mx-auto mb-4 rounded-full" />
+        <h3 class="text-lg font-semibold mb-2">DreamSense Smart Pillow</h3>
+        <p class="text-gray-600 mb-4">AI-powered pillow with sleep tracking and smart wake features.</p>
+        <a href="#" class="text-blue-600 hover:underline font-medium">View on Amazon</a>
+      </div>
+      <div class="bg-white shadow rounded-lg p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="https://source.unsplash.com/120x120/?fitness,wearable" alt="SleepTrack Pro Band" class="mx-auto mb-4 rounded-full" />
+        <h3 class="text-lg font-semibold mb-2">SleepTrack Pro Band</h3>
+        <p class="text-gray-600 mb-4">Wearable band that monitors your sleep and gives actionable tips.</p>
+        <a href="#" class="text-blue-600 hover:underline font-medium">View on Amazon</a>
+      </div>
+      <div class="bg-white shadow rounded-lg p-6 text-center hover:shadow-xl transition transform hover:-translate-y-1">
+        <img src="https://source.unsplash.com/120x120/?nightlight,lamp" alt="LunaGlow Smart Light" class="mx-auto mb-4 rounded-full" />
+        <h3 class="text-lg font-semibold mb-2">LunaGlow Smart Light</h3>
+        <p class="text-gray-600 mb-4">Smart sunrise lamp that helps regulate your sleep cycle.</p>
+        <a href="#" class="text-blue-600 hover:underline font-medium">View on Amazon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Preview Section -->
+  <section class="max-w-7xl mx-auto px-6 py-20 bg-white" aria-labelledby="blog-preview-title">
+    <h2 id="blog-preview-title" class="text-3xl font-bold border-l-4 border-blue-500 pl-4 mb-12">Latest from the Blog</h2>
+    <div class="grid md:grid-cols-3 gap-10">
+      <article class="bg-gray-100 rounded-lg p-6 hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold mb-2">How Smart Pillows Are Changing Sleep</h3>
+        <p class="text-gray-600 text-sm mb-4">Explore the latest innovations in smart pillows and how they can improve your nightly rest.</p>
+        <a href="/blog/how-smart-pillows-are-changing-sleep" class="text-blue-600 hover:underline font-medium">Read More &rarr;</a>
+      </article>
+      <article class="bg-gray-100 rounded-lg p-6 hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold mb-2">Top 5 Sleep Gadgets in 2025</h3>
+        <p class="text-gray-600 text-sm mb-4">A roundup of the most innovative gadgets designed to help you sleep better this year.</p>
+        <a href="/blog/top-5-sleep-gadgets-2025" class="text-blue-600 hover:underline font-medium">Read More &rarr;</a>
+      </article>
+      <article class="bg-gray-100 rounded-lg p-6 hover:shadow-lg transition">
+        <h3 class="text-lg font-semibold mb-2">Building a Smart Bedroom</h3>
+        <p class="text-gray-600 text-sm mb-4">Tips and tricks for creating a tech-savvy, restful sleep environment.</p>
+        <a href="/blog/building-a-smart-bedroom" class="text-blue-600 hover:underline font-medium">Read More &rarr;</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-200 py-10">
+    <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+      <div>
+        <h4 class="text-lg font-semibold mb-4">SmartSleepNest</h4>
+        <p class="text-sm text-gray-400">Smarter Sleep, Healthier You. Discover the latest gadgets and guides to upgrade your sleep.</p>
+      </div>
+      <nav>
+        <h5 class="font-semibold mb-2">Quick Links</h5>
+        <ul class="space-y-1 text-sm">
+          <li><a href="/" class="hover:text-white">Home</a></li>
+          <li><a href="/gadgets" class="hover:text-white">Sleep Gadgets</a></li>
+          <li><a href="/reviews" class="hover:text-white">Reviews</a></li>
+          <li><a href="/blog" class="hover:text-white">Blog</a></li>
+          <li><a href="/contact" class="hover:text-white">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h5 class="font-semibold mb-2">Newsletter</h5>
+        <form class="flex flex-col gap-3">
+          <input type="email" placeholder="Your email" class="px-4 py-2 rounded bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <button type="submit" class="bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded text-white font-medium">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="text-center text-xs text-gray-500 mt-8">
+      &copy; 2025 SmartSleepNest.com. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ once: true, duration: 800 });</script>
 </body>
 </html>
