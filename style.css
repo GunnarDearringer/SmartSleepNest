@@ -56,13 +56,12 @@ a:hover {
 }
 
 .logo-img {
-  height: 48px;
-  width: 48px;
-  margin-right: 0.75rem;
-  border-radius: 8px;
+  height: 120px;
+  width: auto;
+  margin-right: 1rem;
+  border-radius: 12px;
   object-fit: contain;
 }
-
 /* Navbar links */
 .nav-links a {
   margin-left: 1.25rem;
