@@ -1,3 +1,11 @@
+.logo-img {
+  height: 24px;
+  width: 24px;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  border-radius: 4px;
+}
+
 /* Base Styles */
 * {
   margin: 0;
