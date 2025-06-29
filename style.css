@@ -14,7 +14,8 @@ body {
   font-family: system-ui, sans-serif;
   background-color: #f3f4f6;
   color: #1f2937;
-  line-height: 1.6;
+  line-height: 1.8;
+  font-size: 18px;
 }
 
 /* Links */
@@ -39,7 +40,7 @@ a:hover {
 }
 
 .nav-container {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -55,14 +56,15 @@ a:hover {
 }
 
 .logo-img {
-  height: 24px;
-  width: 24px;
+  height: 28px;
+  width: 28px;
   margin-right: 0.5rem;
   border-radius: 4px;
 }
 
+/* Navbar links */
 .nav-links a {
-  margin-left: 1rem;
+  margin-left: 1.25rem;
   color: white;
   font-weight: 500;
 }
@@ -76,24 +78,23 @@ header {
   background: #3b82f6;
   color: white;
   text-align: center;
-  padding: 2.5rem 1rem 2rem;
+  padding: 3rem 1rem 2.5rem;
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
 }
 
 header p {
-  font-size: 1rem;
-  margin-top: 0.5rem;
+  font-size: 1.2rem;
 }
 
-/* Main Container */
+/* Main Content */
 main {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1.5rem;
 }
 
 /* Product Grid */
@@ -105,7 +106,7 @@ main {
 
 .product-card {
   background: white;
-  padding: 1rem;
+  padding: 1.25rem;
   border-radius: 10px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   text-align: center;
@@ -123,23 +124,24 @@ main {
 }
 
 .product-card h2 {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin: 1rem 0 0.5rem;
 }
 
 .product-card p {
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: #4b5563;
   margin-bottom: 1rem;
 }
 
 .product-card a {
   display: inline-block;
-  padding: 0.5rem 1rem;
+  padding: 0.6rem 1.2rem;
   background: #3b82f6;
   color: white;
   border-radius: 6px;
   font-weight: bold;
+  transition: background 0.2s ease;
 }
 
 .product-card a:hover {
@@ -153,27 +155,26 @@ main {
 
 .blog-preview h2 {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   margin-bottom: 2rem;
 }
 
 .blog-card {
   background: white;
-  padding: 1rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   margin-bottom: 1.5rem;
 }
 
 .blog-card h3 {
-  margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
 }
 
 .blog-card p {
   color: #4b5563;
-  font-size: 0.95rem;
-  margin-top: 0.5rem;
+  font-size: 1.05rem;
 }
 
 /* Footer */
@@ -181,6 +182,6 @@ footer {
   text-align: center;
   padding: 1.5rem;
   background: #e5e7eb;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #374151;
 }
