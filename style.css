@@ -176,3 +176,38 @@ footer {
   font-size: 0.95rem;
   color: #374151;
 }
+.logo-header {
+  height: 180px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-img {
+  height: auto;
+  max-height: 300px;
+  transform: scale(1.8);
+  transform-origin: center;
+}
+
+/* New header button styling */
+.header-buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.header-btn {
+  padding: 0.5rem 1.25rem;
+  background-color: #48a8e0;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.header-btn:hover {
+  background-color: #2b85b8;
+}
