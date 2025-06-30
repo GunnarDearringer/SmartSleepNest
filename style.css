@@ -185,3 +185,21 @@ footer {
   font-size: 0.95rem;
   color: #374151;
 }
+.logo-group {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+
+.header-text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.header-text p {
+  margin: 0.25rem 0 0;
+  font-size: 1.1rem;
+  color: #dbeafe;
+}
