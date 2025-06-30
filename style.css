@@ -21,16 +21,16 @@ body {
 /* Links */
 a {
   text-decoration: none;
-  color: #3b82f6;
+  color: #48a8e0;
 }
 
 a:hover {
-  color: #2563eb;
+  color: #2b85b8;
 }
 
 /* Navbar */
 .navbar {
-  background-color: #3b82f6;
+  background-color: #48a8e0;
   color: white;
   padding: 0.75rem 1.5rem;
   position: sticky;
@@ -47,19 +47,17 @@ a:hover {
   align-items: center;
 }
 
-/* Logo block with text */
-
+/* Logo */
 .logo-img {
   height: 500px;
   width: auto;
   display: block;
   margin: 2rem auto 1rem;
   border-radius: 16px;
-  object-fit: cover;
-  transform: scale(2); /* Fake zoom */
+  object-fit: contain;
 }
 
-/* Navbar links */
+/* Nav Links */
 .nav-links a {
   margin-left: 1.5rem;
   color: white;
@@ -117,7 +115,7 @@ main {
 .product-card a {
   display: inline-block;
   padding: 0.6rem 1.2rem;
-  background: #3b82f6;
+  background: #48a8e0;
   color: white;
   border-radius: 6px;
   font-weight: bold;
@@ -125,7 +123,7 @@ main {
 }
 
 .product-card a:hover {
-  background: #2563eb;
+  background: #2b85b8;
 }
 
 /* Blog Section */
